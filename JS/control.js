@@ -137,8 +137,6 @@ class Control {
         this.x = Math.max(minX, Math.min(x, maxX));
         this.y = Math.max(minY, Math.min(y, maxY));
 
-
-
         this.controls.forEach((control) => {
             if (this.y > minY && this.y < maxY) {
                 control.move(control.getX, control.getY + y - oldY);
