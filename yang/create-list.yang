@@ -1,6 +1,6 @@
 module create-list {
     yang-version "1.1";
-    namespace "https://github.com/johneandredejesus/Study/tree/main/yang";
+    namespace "https://github.com/johneandredejesus/Study/blob/main/yang/create-list.yang";
     prefix "c-list";
     contact
       "johneandredejesus@gmail.com";

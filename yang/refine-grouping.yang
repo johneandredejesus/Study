@@ -1,6 +1,6 @@
 module refine-grouping {
     yang-version "1.1";
-    namespace "https://github.com/johneandredejesus/Study/tree/main/yang";
+    namespace "https://github.com/johneandredejesus/Study/blob/main/yang/refine-grouping.yang";
     prefix "rg";
     contact
       "johneandredejesus@gmail.com";
