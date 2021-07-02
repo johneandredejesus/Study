@@ -1,0 +1,37 @@
+module create-grouping {
+    yang-version "1.1";
+    namespace "https://github.com/johneandredejesus/Study/tree/main/yang";
+    prefix "cg";
+    contact
+      "johneandredejesus@gmail.com";
+    organization
+      "JAJ";
+    revision 2021-07-01 {
+        description
+          "First Creation.";
+    }
+
+    container live {
+        grouping address {
+            leaf street {
+                type string;
+            }
+            leaf city {
+                type string;
+            }
+            leaf number {
+                type int32;
+            }
+            leaf state {
+                type string;
+            }
+            description
+              "Related content.";
+        }
+        container destination {
+            uses address;
+            description
+              "Using.";
+        }
+    }
+}

@@ -1,0 +1,21 @@
+module create-state-data {
+    yang-version "1.1";
+    namespace "https://github.com/johneandredejesus/Study/tree/main/yang";
+    prefix "csd";
+    contact
+      "johneandredejesus@gmail.com";
+    organization
+      "JAJ";
+    revision 2021-07-01 {
+        description
+          "First Creation.";
+    }
+    container state {
+        leaf data {
+            type string;
+            description "Read only data.";
+            config false;
+        }
+    }
+    
+}

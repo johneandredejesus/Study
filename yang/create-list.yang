@@ -1,0 +1,34 @@
+module create-list {
+    yang-version "1.1";
+    namespace "https://github.com/johneandredejesus/Study/tree/main/yang";
+    prefix "c-list";
+    contact
+      "johneandredejesus@gmail.com";
+    organization
+      "JAJ";
+    revision 2021-07-01 {
+        description
+          "First Creation.";
+    }
+
+    container users {
+        list user {
+            key "first-name";
+            leaf first-name {
+                type string;
+                description
+                  "First name.";
+            }
+            leaf last-name {
+                type string;
+                description
+                  "Last name.";
+            }
+            leaf birth-day {
+                type int32;
+                description
+                  "Birth day.";
+            }
+        }
+    }
+}

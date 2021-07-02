@@ -1,0 +1,30 @@
+module derived-type {
+    yang-version "1.1";
+    namespace "https://github.com/johneandredejesus/Study/tree/main/yang";
+    prefix "csd";
+    contact
+      "johneandredejesus@gmail.com";
+    organization
+      "JAJ";
+    revision 2021-07-01 {
+        description
+          "First Creation.";
+    }
+
+    container derived {
+        typedef limit {
+            type int16{
+                range "1..1000";
+            }
+            description
+              "Create a new type.";
+        }
+
+        leaf count {
+            type limit;
+
+            description
+              "Using new type.";
+        }
+    }
+}

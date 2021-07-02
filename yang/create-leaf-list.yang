@@ -1,0 +1,21 @@
+module create-leaf-list {
+    yang-version "1.1";
+    namespace "https://github.com/johneandredejesus/Study/tree/main/yang";
+    prefix "clf";
+    contact
+      "johneandredejesus@gmail.com";
+    organization
+      "JAJ";
+    revision 2021-07-01 {
+        description
+          "First Creation.";
+    }
+
+    container name-list {
+        leaf-list name {
+            type string;
+            description
+              "Names of users.";
+        }
+    }
+}

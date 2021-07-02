@@ -1,0 +1,62 @@
+module refine-grouping {
+    yang-version "1.1";
+    namespace "https://github.com/johneandredejesus/Study/tree/main/yang";
+    prefix "rg";
+    contact
+      "johneandredejesus@gmail.com";
+    organization
+      "JAJ";
+    revision 2021-07-01 {
+        description
+          "First Creation.";
+    }
+
+    container live {
+        grouping address {
+            leaf street {
+                type string;
+            }
+            leaf city {
+                type string;
+            }
+            leaf number {
+                type int32;
+            }
+            leaf state {
+                type string;
+            }
+            description
+              "Related content.";
+        }
+        container destination {
+            uses address {
+                refine "street" {
+                    description
+                      "Will be there in the future.";
+                }
+                refine "city" {
+                    description
+                      "Will be there in the future.";
+                }
+                description
+                  "Destination in the future.";
+            }
+            description
+              "Using.";
+        }
+        container living {
+            uses address {
+                refine "street" {
+                    description
+                      "Living in this moment.";
+                }
+                refine "city" {
+                    description
+                      "Living in this moment.";
+                }
+            }
+            description
+              "Using.";
+        }
+    }
+}
