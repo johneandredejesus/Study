@@ -39,7 +39,7 @@ class Control {
     set setId(value) {
         this.id = value;
     }
-    get getType(){
+    get getType() {
         return this.type;
     }
     draw(context) {
@@ -124,32 +124,28 @@ class Control {
      * @param {Number} y
      */
     move(x, y) {
-	
-	const minX = 0;
-	const maxX = screen.width - this.getWidth;
-	
-	const minY = 0;
-	const maxY = screen.height - this.getHeight;
-	
+
+        const minX = 0;
+        const maxX = screen.width - this.getWidth;
+
+        const minY = 0;
+        const maxY = screen.height - this.getHeight;
+
         const oldX = this.x;
         const oldY = this.y;
-        
+
         this.x = Math.max(minX, Math.min(x, maxX));
         this.y = Math.max(minY, Math.min(y, maxY));
-        
-        if(this.x > minX && this.x < maxX)
-        {
-           this.controls.forEach((control) => {    
-            	control.move(control.getX + x - oldX, control.getY);
-          });
-        }
-        
-        if(this.y > minY && this.y < maxY)
-        {
-           this.controls.forEach((control) => {    
-            	control.move(control.getX, control.getY + y - oldY);
-          });
-        }
+
+        this.controls.forEach((control) => {
+            if (this.y > minY && this.y < maxY) {
+                control.move(control.getX, control.getY + y - oldY);
+            }
+            if (this.x > minX && this.x < maxX) {
+                control.move(control.getX + x - oldX, control.getY);
+            }
+        });
+
     }
 }
 class ImageControl extends Control {
@@ -176,38 +172,38 @@ class ImageControl extends Control {
         this.image.src = value;
     }
 }
-class TextControl extends Control{
-   
-    constructor(x, y){
+class TextControl extends Control {
+
+    constructor(x, y) {
         super(2, 0, 0, x, y)
         this.text = "";
-        this.font =  "Arial";
+        this.font = "Arial";
         this.fontSize = 8;
     }
-    get getText(){
+    get getText() {
         return this.text;
     }
-    set setText(value){
+    set setText(value) {
         this.text = value;
     }
-    get getFont(){
+    get getFont() {
         return this.font;
     }
-    set setFont(value){
+    set setFont(value) {
         this.font = value;
     }
-    get getFontSize(){
+    get getFontSize() {
         return this.fontSize;
     }
-    set setFontSize(value){
+    set setFontSize(value) {
         this.fontSize = value;
     }
     draw(context) {
         super.draw(context);
-        if(this.getWidth == 0){
-            this.setWidth =  Math.round(context.measureText(this.getText).width);
+        if (this.getWidth == 0) {
+            this.setWidth = Math.round(context.measureText(this.getText).width);
         }
-        if(this.getHeight == 0){
+        if (this.getHeight == 0) {
             this.setHeight = this.fontSize;
         }
         context.textAlign = 'start';
