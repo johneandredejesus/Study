@@ -1,0 +1,90 @@
+module create-augment {
+    yang-version "1.1";
+    namespace "https://github.com/johneandredejesus/Study/blob/main/yang/create-augment.yang";
+    prefix ca;
+
+    contact
+      "johneandredejesus@gmail.com";
+    organization
+      "JAJ";
+    revision 2021-07-03 {
+        description
+          "First Creation.";
+    }
+    grouping vehicle-characteristics {
+        leaf color {
+            type int8;
+            description
+              "Color of vehicle.";
+        }
+        leaf wheels {
+            type int8;
+            description
+              "Wheels of vehicle.";
+        }
+    }
+    container vehicles {
+
+        choice vehicle {
+            case car {
+                container car-characteristics {
+
+                    uses vehicle-characteristics {
+                        refine "color" {
+                            description
+                              "Can have several color.";
+                        }
+                        refine "wheels" {
+                            description
+                              "It can have four or more wheels.";
+                        }
+                    }
+                }
+            }
+            case motorcycle {
+                container motorcycle-characteristics {
+                    uses vehicle-characteristics {
+                        refine "color" {
+                            description
+                              "Can have several color.";
+                        }
+                        refine "wheels" {
+                            description
+                              "Has two wheels";
+                        }
+                    }
+                }
+            }
+        }
+    }
+    augment /vehicles/vehicle/car/car-characteristics {
+
+        leaf steering-wheel {
+            type int8;
+        }
+    }
+    augment /vehicles/vehicle/motorcycle/motorcycle-characteristics {
+
+        leaf handlebar {
+            type int8;
+        }
+    }
+    augment /vehicles/vehicle/motorcycle {
+        when "motorcycle-characteristics = 'handlebar'";
+        container tricycle-characteristics {
+            uses vehicle-characteristics {
+                refine "color" {
+                    description
+                      "Can have several color.";
+                }
+                refine "wheels" {
+                    description
+                      "Has tree wheels";
+                }
+            }
+            leaf handlebar {
+                type int8;
+            }
+        }
+    }
+}

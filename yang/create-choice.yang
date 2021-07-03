@@ -1,0 +1,60 @@
+module create-choice {
+    yang-version "1.1";
+    namespace "https://github.com/johneandredejesus/Study/blob/main/yang/create-choice.yang";
+    prefix cc;
+
+    contact
+      "johneandredejesus@gmail.com";
+    organization
+      "JAJ";
+    revision 2021-07-03 {
+        description
+          "First Creation.";
+    }
+
+    grouping vehicle-characteristics {
+        leaf color {
+            type int8;
+            description
+              "Color of vehicle.";
+        }
+        leaf wheels {
+            type int8;
+            description
+              "Wheels of vehicle.";
+        }
+    }
+    container vehicles {
+
+        choice vehicle {
+            case car {
+                container car-characteristics {
+                    uses vehicle-characteristics {
+                        refine "color" {
+                            description
+                              "Can have several color.";
+                        }
+                        refine "wheels" {
+                            description
+                              "It can have four or more wheels.";
+                        }
+                    }
+                }
+            }
+            case motorcycle {
+                container motorcycle-characteristics {
+                    uses vehicle-characteristics {
+                        refine "color" {
+                            description
+                              "Can have several color.";
+                        }
+                        refine "wheels" {
+                            description
+                              "Has two wheels";
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
