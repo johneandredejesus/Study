@@ -28,7 +28,6 @@ module create-augment {
         choice vehicle {
             case car {
                 container car-characteristics {
-
                     uses vehicle-characteristics {
                         refine "color" {
                             description

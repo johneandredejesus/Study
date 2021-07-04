@@ -11,7 +11,6 @@ module create-choice {
         description
           "First Creation.";
     }
-
     grouping vehicle-characteristics {
         leaf color {
             type int8;
@@ -25,7 +24,6 @@ module create-choice {
         }
     }
     container vehicles {
-
         choice vehicle {
             case car {
                 container car-characteristics {
