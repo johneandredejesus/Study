@@ -1,0 +1,28 @@
+module create-import-module {
+    yang-version "1.1";
+    namespace "https://github.com/johneandredejesus/Study/blob/main/yang/create-import-module.yang";
+    prefix "cim";
+
+    contact
+      "johneandredejesus@gmail.com";
+    organization
+      "JAJ";
+    revision 2021-07-06 {
+        description
+          "First Creation.";
+    }
+    grouping user {
+        leaf name {
+            type string;
+            description
+              "User's name.";
+            config false;
+        }
+        leaf birth-day {
+            type int16;
+            description
+              "User's birth day.";
+            config false;
+        }
+    }
+}

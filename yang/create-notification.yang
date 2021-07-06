@@ -1,0 +1,36 @@
+module create-notification {
+    yang-version "1.1";
+    namespace "https://github.com/johneandredejesus/Study/blob/main/yang/create-notification.yang";
+    prefix "c-n";
+
+    contact
+      "johneandredejesus@gmail.com";
+    organization
+      "JAJ";
+    revision 2021-07-06 {
+        description
+          "First Creation.";
+    }
+
+    typedef event-message {
+        type string;
+        description
+          "Event name sent.";
+    }
+    typedef event-number {
+        type int8;
+        description
+          "Event type number.";
+    }
+
+    notification status-event {
+        container event-received {
+            leaf event-description {
+                type event-message;
+            }
+            leaf event-type {
+                type event-number;
+            }
+        }
+    }
+}

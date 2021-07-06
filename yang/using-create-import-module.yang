@@ -1,0 +1,23 @@
+module using-create-import-module {
+    yang-version "1.1";
+    namespace "https://github.com/johneandredejesus/Study/blob/main/yang/using-create-import-module.yang";
+    prefix "ucim";
+
+    import create-import-module {
+        prefix cim-imported;
+        revision-date 2021-07-06;
+    }
+
+    contact
+      "johneandredejesus@gmail.com";
+    organization
+      "JAJ";
+    
+    revision 2021-07-06 {
+        description
+          "First Creation.";
+    }
+    container user-data {
+        uses cim-imported:user;
+    }
+}
