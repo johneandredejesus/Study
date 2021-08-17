@@ -15,7 +15,7 @@ def force_type(method):
 
     All parameters must be annotated.
 
-    The value type None is accepted.
+    The value type None is not accepted.
 
     Ex.:  
 
@@ -38,7 +38,7 @@ def force_type(method):
                                      for param_kwarg, value_ in kwargs.items() if param_ == param_kwarg))
 
         for (param_, type_), value_ in params_types_values:
-            if value_ is not None and type(value_) is not type_:
+            if value_ is  None or type(value_) is not type_:
                 raise NotValidValueException(f'The param {param_} must be of type {type_}.')
 
         return method(*args, **kwargs)

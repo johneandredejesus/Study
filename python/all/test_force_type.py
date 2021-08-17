@@ -14,7 +14,7 @@ class  Test:
 
 def main():
     
-    result = plus(value=2, value2=4) # Accepts the correct type, in this case int.
+    result = plus(value=None, value2=4) # Accepts the correct type, in this case int.
     print(f'The result is: {result}')
     
     result = plus(value='2', value2=4) # Don't Accepts the incorrect type, in this case string.
