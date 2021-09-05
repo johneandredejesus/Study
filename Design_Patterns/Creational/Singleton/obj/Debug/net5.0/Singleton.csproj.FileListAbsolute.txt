@@ -1,0 +1,16 @@
+/home/johne/Study/Study/Design_Patterns/Creational/Singleton/bin/Debug/net5.0/Singleton
+/home/johne/Study/Study/Design_Patterns/Creational/Singleton/bin/Debug/net5.0/Singleton.deps.json
+/home/johne/Study/Study/Design_Patterns/Creational/Singleton/bin/Debug/net5.0/Singleton.runtimeconfig.json
+/home/johne/Study/Study/Design_Patterns/Creational/Singleton/bin/Debug/net5.0/Singleton.runtimeconfig.dev.json
+/home/johne/Study/Study/Design_Patterns/Creational/Singleton/bin/Debug/net5.0/Singleton.dll
+/home/johne/Study/Study/Design_Patterns/Creational/Singleton/bin/Debug/net5.0/ref/Singleton.dll
+/home/johne/Study/Study/Design_Patterns/Creational/Singleton/bin/Debug/net5.0/Singleton.pdb
+/home/johne/Study/Study/Design_Patterns/Creational/Singleton/obj/Debug/net5.0/Singleton.csprojAssemblyReference.cache
+/home/johne/Study/Study/Design_Patterns/Creational/Singleton/obj/Debug/net5.0/Singleton.GeneratedMSBuildEditorConfig.editorconfig
+/home/johne/Study/Study/Design_Patterns/Creational/Singleton/obj/Debug/net5.0/Singleton.AssemblyInfoInputs.cache
+/home/johne/Study/Study/Design_Patterns/Creational/Singleton/obj/Debug/net5.0/Singleton.AssemblyInfo.cs
+/home/johne/Study/Study/Design_Patterns/Creational/Singleton/obj/Debug/net5.0/Singleton.csproj.CoreCompileInputs.cache
+/home/johne/Study/Study/Design_Patterns/Creational/Singleton/obj/Debug/net5.0/Singleton.dll
+/home/johne/Study/Study/Design_Patterns/Creational/Singleton/obj/Debug/net5.0/ref/Singleton.dll
+/home/johne/Study/Study/Design_Patterns/Creational/Singleton/obj/Debug/net5.0/Singleton.pdb
+/home/johne/Study/Study/Design_Patterns/Creational/Singleton/obj/Debug/net5.0/Singleton.genruntimeconfig.cache

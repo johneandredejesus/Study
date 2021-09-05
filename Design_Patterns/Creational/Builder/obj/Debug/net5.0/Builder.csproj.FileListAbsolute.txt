@@ -1,0 +1,16 @@
+/home/johne/Study/Study/Design_Patterns/Creational/Builder/obj/Debug/net5.0/Builder.csprojAssemblyReference.cache
+/home/johne/Study/Study/Design_Patterns/Creational/Builder/obj/Debug/net5.0/Builder.GeneratedMSBuildEditorConfig.editorconfig
+/home/johne/Study/Study/Design_Patterns/Creational/Builder/obj/Debug/net5.0/Builder.AssemblyInfoInputs.cache
+/home/johne/Study/Study/Design_Patterns/Creational/Builder/obj/Debug/net5.0/Builder.AssemblyInfo.cs
+/home/johne/Study/Study/Design_Patterns/Creational/Builder/obj/Debug/net5.0/Builder.csproj.CoreCompileInputs.cache
+/home/johne/Study/Study/Design_Patterns/Creational/Builder/bin/Debug/net5.0/Builder
+/home/johne/Study/Study/Design_Patterns/Creational/Builder/bin/Debug/net5.0/Builder.deps.json
+/home/johne/Study/Study/Design_Patterns/Creational/Builder/bin/Debug/net5.0/Builder.runtimeconfig.json
+/home/johne/Study/Study/Design_Patterns/Creational/Builder/bin/Debug/net5.0/Builder.runtimeconfig.dev.json
+/home/johne/Study/Study/Design_Patterns/Creational/Builder/bin/Debug/net5.0/Builder.dll
+/home/johne/Study/Study/Design_Patterns/Creational/Builder/bin/Debug/net5.0/ref/Builder.dll
+/home/johne/Study/Study/Design_Patterns/Creational/Builder/bin/Debug/net5.0/Builder.pdb
+/home/johne/Study/Study/Design_Patterns/Creational/Builder/obj/Debug/net5.0/Builder.dll
+/home/johne/Study/Study/Design_Patterns/Creational/Builder/obj/Debug/net5.0/ref/Builder.dll
+/home/johne/Study/Study/Design_Patterns/Creational/Builder/obj/Debug/net5.0/Builder.pdb
+/home/johne/Study/Study/Design_Patterns/Creational/Builder/obj/Debug/net5.0/Builder.genruntimeconfig.cache
