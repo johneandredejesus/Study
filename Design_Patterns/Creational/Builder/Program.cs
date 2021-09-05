@@ -13,6 +13,7 @@ namespace Builder
             box.MakeMeal().MakeMeal().MakeMeal();
 
             Console.WriteLine(box.Price);
+            
             Console.WriteLine(box.Quantity);
         }
     }
